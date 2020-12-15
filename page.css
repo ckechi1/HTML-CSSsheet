@@ -1,0 +1,18 @@
+.img_titre{ 
+    color: green;
+} 
+ 
+h1,h2,h3
+{ 
+  text-align: center;
+} 
+ 
+p
+{  
+  text-align: justify;
+} 
+.signature
+{ 
+     text-align: right;
+
+}
