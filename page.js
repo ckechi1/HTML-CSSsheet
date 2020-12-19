@@ -1,50 +1,15 @@
+let Movie = [ 
+     { title : "a" , year:2018 , rating: 4.5 }, 
+     { title : "b" , year:2018 , rating: 4.7 }, 
+     { title : "c" , year:2018 , rating: 3 }, 
+     { title : "d" , year:2018 , rating: 4.5 }, 
+]; 
  
-let blogPost = { 
-   title : "Trump perds face a biden", 
-   body : " Trump a perdu contre biden mais refuse de ladmettre", 
-   author : "cheickAt", 
-   comments : [{ author : "mosa ", 
-                body : "wow inbelivable"}], 
-   isLive : true              
-};  
-   
-    function ShowDEtail(blogPost){ 
-         for ( key in blogPost ){ 
-              console.log(key ,  blogPost[key]);
-         }  
-    }
- 
-    ShowDEtail(blogPost);
-     
-     
-       
-        
-/*  
-const Adress1 = new Adress('a' , 'b' , 'c'); 
-const Adress2 = new Adress('a' , 'b' , 'c');   
 
-function Adress(city , zipcode , street ){ 
-      
-     this.city=city; 
-     this.street=street; 
-     this.zipcode=zipcode; 
-
-} 
- 
-function AreEquals (Adress1 , Adress2 ){ 
-   
-     if (Adress1 === Adress2 ) return true ; 
-      
-} 
- 
-function AreTheSame (Adress1 , Adress2){ 
-      
-     if ( Adress1 == Adress2) return true ; 
-}
- 
- let value1 = AreEquals(Adress1.city , Adress2.city); 
- let value2 = AreTheSame(Adress1.zipcode , Adress2.zipcode);  
+ let  all2K18Movies = Movie.filter(m => m.year===2018 && m.rating >=4); 
+ console.log(all2K18Movies); 
   
- console.log(`la valeur de AreEquals : ${value1} 
-   
-               la valeur de AretheSame : ${value2}`); */
+ let sortmoviebyrate = all2K18Movies.sort((a , b ) => a.rating - b.rating) 
+                                     .reverse(); 
+
+ console.log(sortmoviebyrate.map(m=>m.title)); 
