@@ -1,0 +1,17 @@
+
+body {
+    padding: 70px;
+  }
+  
+  form, #result {
+    margin: auto;
+    margin-bottom: 30px;
+    width: 400px;
+    padding: 30px;
+    border: 15px solid black;
+  }
+  
+  span {
+    margin: 20px;
+  }
+  
