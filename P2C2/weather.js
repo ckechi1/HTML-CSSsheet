@@ -11,7 +11,7 @@ var request = new XMLHttpRequest();
                var res = JSON.parse(this.responseText); 
                 
                let currentweather = res.current_condition.condition;  
-               console.log(currentweather); 
+               console.log(currentweather);             
 
                weatherResult.textContent=currentweather; 
             
